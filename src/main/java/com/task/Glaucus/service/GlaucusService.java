@@ -30,9 +30,8 @@ public class GlaucusService {
 	/**
 	 * @return NumberIncrementEntity
 	 */
-	@Async
-	@Transactional
 	@Synchronized
+	@Transactional
 	public void incrementTheNumber() {
 
 		currentIncrementedValue=currentIncrementedValue+1;
